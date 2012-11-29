@@ -15,7 +15,11 @@ include 'Questions.php';
     <!-- Le styles -->
     <link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/questions.css" />
-
+    <link rel="stylesheet" type="text/css" media="all" href="css/daterangepicker.css" />
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/date.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
     <style type="text/css">
       body {
         padding-top: 40px;
@@ -53,44 +57,43 @@ include 'Questions.php';
 	</div><!-- /.navbar -->
    
 
-<div id="container" class="container">
-     
-	<div id="leftpane">
-		<?php getQuestions(); ?>
+	<div id="container" class="container">
+		<div id="leftpane">
+			<?php getQuestions(); ?>
+		</div> 	
+	   	<!--This will be the right pane-->
+	   	<div id="rightpane"  ondragover="allowDrop(event)">
+			<div id="panel" style="width:100%; height:100%;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				    		<div id="row" class="row">
+					    		<div class="well">
+					               <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+					                  <i class="icon-calendar icon-large"></i>
+					                  <span></span> <b class="caret" style="margin-top: 8px"></b>
+					               </div>
+					            </div>
+				    		</div>    					    	
+			</div>
+		</div>
 	</div>
-   	
-   	<!--This will be the right pane-->
-   	<div id="rightpane"  ondragover="allowDrop(event)">
-
-<div id="panel" style="width:100%; height:100%;" ondrop="drop(event)" ondragover="allowDrop(event)">
-
-    		The content
-
-</div>
-
-	</div>
-
-</div>
-
-
-
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  </body>
 
+
+
+<!--The following script is for the button click slide in slide out-->
    <script type="text/javascript">
    var out = false;
    $('#btn_question').click(function(){
 	   	if(out!=true){
 	   		$('#leftpane').css('marginLeft',"0px");
-			//$('div.container').css('left',"+=300");
+			$('#rightpane').css('marginLeft',"+=300");
 			out=true;
 		}
 		else{
 	   		$('#leftpane').css('marginLeft',"-300px");
-			//$('div.container').css('left',"-=300");
+			$('#rightpane').css('marginLeft',"-=300");
 			out=false;
 		}
    });
@@ -127,4 +130,46 @@ include 'Questions.php';
 			}
 		}
 	</script>
-  </body>
+
+<!--The following code is for the date range picker -->
+	<script type="text/javascript">
+               $(document).ready(function() {
+                  $('#reportrange').daterangepicker(
+                     {
+                        ranges: {
+                           'Today': ['today', 'today'],
+                           'Yesterday': ['yesterday', 'yesterday'],
+                           'Last 7 Days': [Date.today().add({ days: -6 }), 'today'],
+                           'Last 30 Days': [Date.today().add({ days: -29 }), 'today'],
+                           'This Month': [Date.today().moveToFirstDayOfMonth(), Date.today().moveToLastDayOfMonth()],
+                           'Last Month': [Date.today().moveToFirstDayOfMonth().add({ months: -1 }), Date.today().moveToFirstDayOfMonth().add({ days: -1 })]
+                        },
+                        opens: 'left',
+                        format: 'MM/dd/yyyy',
+                        separator: ' to ',
+                        startDate: Date.today().add({ days: -29 }),
+                        endDate: Date.today(),
+                        minDate: '01/01/2012',
+                        maxDate: '12/31/2013',
+                        locale: {
+                            applyLabel: 'Submit',
+                            fromLabel: 'From',
+                            toLabel: 'To',
+                            customRangeLabel: 'Custom Range',
+                            daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr','Sa'],
+                            monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                            firstDay: 1
+                        },
+                        showWeekNumbers: true,
+                        buttonClasses: ['btn-danger']
+                     }, 
+                     function(start, end) {
+                        $('#reportrange span').html(start.toString('MMMM d, yyyy') + ' - ' + end.toString('MMMM d, yyyy'));
+                     }
+                  );
+
+                  //Set the initial state of the picker label
+                  $('#reportrange span').html(Date.today().add({ days: -29 }).toString('MMMM d, yyyy') + ' - ' + Date.today().toString('MMMM d, yyyy'));
+
+               });
+    </script>

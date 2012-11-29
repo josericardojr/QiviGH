@@ -42,6 +42,11 @@ height:100%;
 }
 
 #rightpane{	
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	
 	margin-left: 0px;
 	height:100%;
 	width:100%;
@@ -63,6 +68,9 @@ height:100%;
 }
 
 
+.row{
+	height: 60px;
+}
 
 
 #slider-range {
