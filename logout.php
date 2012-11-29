@@ -7,4 +7,6 @@ session_destroy();
 
 unset($_SESSION['loggedIn']);
 
+ header( 'Location: http://localhost:8888/QiviGH/index.html' ) ;
+
 ?>

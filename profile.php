@@ -100,13 +100,9 @@ function getAccesToken(){
 				<div class="span7">
 						<h4>Select one of your repositories to explore </h4>
 					<?php 
-
 							foreach ($_SESSION['user_repos'] as $key => $value) {
-								
-
 								echo '<a id='.$_SESSION['user_repos'][$key]['name'].' class="btn btn-primary btn-large margin_profile">'.$_SESSION['user_repos'][$key]['name'].'</a>';
 							} 
-
 					?>
 
 
@@ -126,8 +122,8 @@ function getAccesToken(){
     <script src="js/jquery-1.8.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-      $('#btn_Start').click(function(){
-       document.location.href = 'https://github.com/login/oauth/authorize?client_id=0e9b19a862aa8bb7893c';
+      $('.margin_profile').on("click",function(event){
+      	document.location.href = 'canvas.php?repo='+$(this).attr('id');
       });
     </script>
   </body>
