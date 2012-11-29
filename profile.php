@@ -12,7 +12,6 @@ if(!$_SESSION["loggedIn"]){
 	foreach ($data as $key => $value) {
 		$_SESSION[$key] = $value;
 	}
-
 	getUserRepos();
 
 
@@ -23,7 +22,7 @@ if(!$_SESSION["loggedIn"]){
 
 function getUserRepos(){
 
-	$uri = $_SESSION['repos_url'].'?'.$_SESSION['token'];
+	$uri = 'https://api.github.com/user/repos?type=all&'.$_SESSION['token'];
 	$response = file_get_contents($uri);
 	$_SESSION['user_repos'] = json_decode($response,true); 
 }
@@ -99,7 +98,7 @@ function getAccesToken(){
 
 
 				<div class="span7">
-						<h4>Select one of your public repositories to explore </h4>
+						<h4>Select one of your repositories to explore </h4>
 					<?php 
 
 							foreach ($_SESSION['user_repos'] as $key => $value) {
