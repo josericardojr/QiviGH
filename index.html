@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>QiviGH</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive exploration tool for exploring Github projects">
+    <meta name="author" content="Aditya Relangi">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+
+  <body>
+   <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+
+
+
+
+
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="index.html">Qivi<sup><font color="#10A4DB">GH</font></sup></a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="about.html">About us</a></li>
+        </ul>
+   
+      </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar-inner -->
+</div><!-- /.navbar -->
+   
+
+<div class="container">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+        <h1>Qivi<sup><font color="#10A4DB">GH</font></sup></h1><br>
+        <p>Explore your projects on Github</p>
+        <p><a id="btn_Start" class="btn btn-primary btn-large">&nbsp;&nbsp;&nbsp; Start &raquo; &nbsp;&nbsp;&nbsp;</a></p>
+    </div>
+</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('#btn_Start').click(function(){
+       document.location.href = 'https://github.com/login/oauth/authorize?client_id=0e9b19a862aa8bb7893c';
+      });
+    </script>
+  </body>
+</html>
