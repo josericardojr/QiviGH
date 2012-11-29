@@ -1,4 +1,5 @@
 <?php 
+include 'Questions.php';
 
 ?>
 
@@ -55,10 +56,12 @@
 <div id="container" class="container">
      
 	<div id="leftpane">
+		<?php getQuestions(); ?>
 	</div>
    	
    	<!--This will be the right pane-->
-   	<div id="main-container"  ondragover="allowDrop(event)">
+   	<div id="rightpane"  ondragover="allowDrop(event)">
+   		The content
 	</div>
 
 </div>
