@@ -62,11 +62,6 @@ function getAccesToken(){
   <body>
    <div class="navbar navbar-fixed-top">
 		  <div class="navbar-inner">
-
-
-
-
-
 		    <div class="container">
 		      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 		        <span class="icon-bar"></span>
@@ -75,7 +70,9 @@ function getAccesToken(){
 		      </a>
 		      <a class="brand" href="index.html">Qivi<sup><font color="#10A4DB">GH</font></sup></a>
 		      <div class="nav-collapse">
-		        <ul class="nav">
+
+		      	
+		        <ul class="nav pull-right">
 		          <li><a href="logout.php">Logout</a></li>
 		        </ul>
 		   
