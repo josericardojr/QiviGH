@@ -66,10 +66,15 @@ include 'Questions.php';
 			<div id="panel" style="width:100%; height:100%;" ondrop="drop(event)" ondragover="allowDrop(event)">
 				    		<div id="row" class="row">
 					    		<div class="well">
-					               <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+
+					    			<div id="crumbs" class="pull-left breadcrumb">
+					    					<div id="content"></div>
+					    			</div>
+
+					                <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
 					                  <i class="icon-calendar icon-large"></i>
 					                  <span></span> <b class="caret" style="margin-top: 8px"></b>
-					               </div>
+					                </div>
 					            </div>
 				    		</div>    					    	
 			</div>
@@ -79,6 +84,13 @@ include 'Questions.php';
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
   </body>
+
+<!--Prevent leftpane links from opening-->
+<script type="text/javascript">
+	$("#leftpane a").click(function(event){
+	  event.preventDefault();
+	});
+</script>
 
 
 
@@ -102,6 +114,7 @@ include 'Questions.php';
 
    <!--The following script is for drop events -->
    <script type="text/javascript">
+   var reqCounter=0;
 		function allowDrop(ev)
 		{
 			ev.preventDefault();
@@ -115,7 +128,14 @@ include 'Questions.php';
 			ev.preventDefault();
 			var data=ev.dataTransfer.getData("Text");
 			alert("source " +data+ " target "+ev.target.id);
-			if(ev.target.id.length!=0){}
+			if(ev.target.id.length!=0){
+				//We have a drop event on an element
+				reqCounter++;
+				crumbs(data); // This function will take care of the breadcrumbs
+
+				//This is where we have to make an ajax call
+
+			}
 			//window.location.href=data+".php?from="+from+"&to="+to+"&on="+ev.target.id;
 		}
 		function Canvasdrop(ev){
@@ -129,6 +149,21 @@ include 'Questions.php';
 		
 			}
 		}
+	</script>
+
+	<script type="text/javascript">
+				function crumbs(data){
+					window.location.hash +='#'+data; 
+					var str = window.location.href;var link='<div id="content">';
+					var c = str.split('#');
+					for (var i = 1, j= 0; i < c.length; i++,j++) {
+						link += '<a href="javascript:history.go('+((-1)*((c.length-1)-j)+1)+')">'+c[i]+'</a> <span class="divider">/</span>';
+					};
+					link +='</div>';
+					$('#content').remove();
+					$('#crumbs').append(link);
+
+				}
 	</script>
 
 <!--The following code is for the date range picker -->

@@ -12,14 +12,16 @@
    <body>
 
       <div class="container">
+         <div class="span12">
 
            
 
             <h4>Options Usage Example</h4>
-<div class="well">
+
+            <div class="well">
                <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
                   <i class="icon-calendar icon-large"></i>
-                  <span></span> <b class="caret" style="margin-top: 8px"></b>
+                  <span id="val"></span> <b class="caret" style="margin-top: 8px"></b>
                </div>
 
                <script type="text/javascript">
@@ -39,7 +41,7 @@
                         separator: ' to ',
                         startDate: Date.today().add({ days: -29 }),
                         endDate: Date.today(),
-                        minDate: '01/01/2012',
+                        minDate: '01/01/2010',
                         maxDate: '12/31/2013',
                         locale: {
                             applyLabel: 'Submit',
@@ -54,6 +56,7 @@
                         buttonClasses: ['btn-danger']
                      }, 
                      function(start, end) {
+                      alert('change'+start.toString('MMddyyyy'));
                         $('#reportrange span').html(start.toString('MMMM d, yyyy') + ' - ' + end.toString('MMMM d, yyyy'));
                      }
                   );
@@ -61,12 +64,13 @@
                   //Set the initial state of the picker label
                   $('#reportrange span').html(Date.today().add({ days: -29 }).toString('MMMM d, yyyy') + ' - ' + Date.today().toString('MMMM d, yyyy'));
 
+
                });
                </script>
 
             </div>
-            
 
+         </div>
       </div>
 
    </body>
