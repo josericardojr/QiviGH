@@ -36,7 +36,7 @@ include 'Questions.php';
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </a>
-		      <a class="brand" href="index.html">Qivi<sup><font color="#10A4DB">GH</sup>&raquo;</font> <?php echo $_GET['repo']; ?></a>
+		      <a class="brand" href="profile.php">Qivi<sup><font color="#10A4DB">GH</sup>&raquo;</font> <?php echo $_GET['repo']; ?></a>
 		      <ul class = "nav pull-left">
 		      	<li>
 		      	  <button id="btn_question" class="btn btn-info">Questions</button>
@@ -61,7 +61,13 @@ include 'Questions.php';
    	
    	<!--This will be the right pane-->
    	<div id="rightpane"  ondragover="allowDrop(event)">
-   		The content
+
+<div id="panel" style="width:100%; height:100%;" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    		The content
+
+</div>
+
 	</div>
 
 </div>
@@ -90,4 +96,35 @@ include 'Questions.php';
    });
 
    </script>
+
+   <!--The following script is for drop events -->
+   <script type="text/javascript">
+		function allowDrop(ev)
+		{
+			ev.preventDefault();
+		}
+		function drag(ev)
+		{
+			ev.dataTransfer.setData("Text",ev.target.id);
+		}
+		function drop(ev)
+		{
+			ev.preventDefault();
+			var data=ev.dataTransfer.getData("Text");
+			alert("source " +data+ " target "+ev.target.id);
+			if(ev.target.id.length!=0){}
+			//window.location.href=data+".php?from="+from+"&to="+to+"&on="+ev.target.id;
+		}
+		function Canvasdrop(ev){
+			ev.preventDefault();
+			var data=ev.dataTransfer.getData("Text");
+			var r = document.getElementById("myModel");
+			for(var i=0;i<glo.length;i++){				
+				var temp = glo[i];
+				if(temp.hit((ev.x-r.offsetLeft+window.pageXOffset) ,(ev.y-r.offsetTop+window.pageYOffset)))
+						alert("source:"+data+" target:"+temp.getName());
+		
+			}
+		}
+	</script>
   </body>
