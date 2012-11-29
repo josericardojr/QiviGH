@@ -13,10 +13,11 @@
 
     <!-- Le styles -->
     <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/questions.css" />
 
     <style type="text/css">
       body {
-        padding-top: 60px;
+        padding-top: 40px;
         padding-bottom: 40px;
       }
     </style>
@@ -34,7 +35,14 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </a>
-		      <a class="brand" href="index.html">Qivi<sup><font color="#10A4DB">GH</font></sup></a>
+		      <a class="brand" href="index.html">Qivi<sup><font color="#10A4DB">GH</sup>&raquo;</font> <?php echo $_GET['repo']; ?></a>
+		      <ul class = "nav pull-left">
+		      	<li>
+		      	  <button id="btn_question" class="btn btn-info">Questions</button>
+		      	</li>
+		      </ul>
+
+
 		        <ul class="nav pull-right">
 		          <li><a href="logout.php">Logout</a></li>
 		        </ul>
@@ -44,9 +52,15 @@
 	</div><!-- /.navbar -->
    
 
-<div class="container">
-      <!-- Main hero unit for a primary marketing message or call to action -->
-   
+<div id="container" class="container">
+     
+	<div id="leftpane">
+	</div>
+   	
+   	<!--This will be the right pane-->
+   	<div id="main-container"  ondragover="allowDrop(event)">
+	</div>
+
 </div>
 
 
@@ -56,5 +70,21 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.8.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-   
+
+   <script type="text/javascript">
+   var out = false;
+   $('#btn_question').click(function(){
+	   	if(out!=true){
+	   		$('#leftpane').css('marginLeft',"0px");
+			//$('div.container').css('left',"+=300");
+			out=true;
+		}
+		else{
+	   		$('#leftpane').css('marginLeft',"-300px");
+			//$('div.container').css('left',"-=300");
+			out=false;
+		}
+   });
+
+   </script>
   </body>
