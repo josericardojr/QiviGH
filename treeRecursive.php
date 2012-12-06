@@ -2,6 +2,7 @@
 
 session_start();
 
+
 function theTree($repo){
 	getUserCommits($repo);
 }
@@ -62,14 +63,15 @@ function subTree($root,$begin, $leadingComp){
 	$val = array('count' => 0);$j=0;
 
 	if($begin!=0){
+
 		if($leadingComp > 0)
-			$store = ',{"name" : "'.$root['tree'][$begin]['path'].'", "children":[';
+			$store = ',{"name" : "'.substr($root['tree'][$begin]['path'],strrpos($root['tree'][$begin]['path'], '/')+1).'", "children":[';
 		else
-			$store = '{"name" : "'.$root['tree'][$begin]['path'].'", "children":[';
+			$store = '{"name" : "'.substr($root['tree'][$begin]['path'],strrpos($root['tree'][$begin]['path'], '/')+1).'", "children":[';
 
 	}
 	else{	
-			$store = '{"name" : "'.$root['tree'][$begin]['path'].'", "children":[';
+			$store = '{"name" : "'.substr($root['tree'][$begin]['path'],strrpos($root['tree'][$begin]['path'], '/')+1).'", "children":[';
 	}
 		
 
@@ -84,10 +86,10 @@ function subTree($root,$begin, $leadingComp){
 			}else{
 
 				if(	($j != 0) ){
-					$store = $store.',{"name" : "'.$root['tree'][$i]['path'].'", "size": "'.$root['tree'][$i]['size'].'"}';
+					$store = $store.',{"name" : "'.substr($root['tree'][$i]['path'], strlen($root['tree'][$begin]['path'])+1).'", "size": "'.$root['tree'][$i]['size'].'"}';
 				}
 				else
-					$store = $store.'{"name" : "'.$root['tree'][$i]['path'].'", "size": "'.$root['tree'][$i]['size'].'"}';
+					$store = $store.'{"name" : "'.substr($root['tree'][$i]['path'], strlen($root['tree'][$begin]['path'])+1).'", "size": "'.$root['tree'][$i]['size'].'"}';
 
 			}
 
