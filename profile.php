@@ -21,7 +21,6 @@ if(!$_SESSION["loggedIn"]){
 
 
 function getUserRepos(){
-
 	$uri = 'https://api.github.com/user/repos?type=all&'.$_SESSION['token'];
 	$response = file_get_contents($uri);
 	$_SESSION['user_repos'] = json_decode($response,true); 
@@ -71,7 +70,7 @@ function getAccesToken(){
 		      <a class="brand" href="index.html">Qivi<sup><font color="#10A4DB">GH</font></sup></a>
 		      <div class="nav-collapse">
 
-		      	
+
 		        <ul class="nav pull-right">
 		          <li><a href="logout.php">Logout</a></li>
 		        </ul>
@@ -98,7 +97,7 @@ function getAccesToken(){
 						<h4>Select one of your repositories to explore </h4>
 					<?php 
 							foreach ($_SESSION['user_repos'] as $key => $value) {
-								echo '<a id='.$_SESSION['user_repos'][$key]['name'].' class="btn btn-primary btn-large margin_profile">'.$_SESSION['user_repos'][$key]['name'].'</a>';
+								echo '<a id='.$_SESSION['user_repos'][$key]['name'].'&created_at='.$_SESSION['user_repos'][$key]['created_at'].' class="btn btn-primary btn-large margin_profile">'.$_SESSION['user_repos'][$key]['name'].'</a>';
 							} 
 					?>
 

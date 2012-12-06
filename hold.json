@@ -1,0 +1,374 @@
+[
+    {
+        "sha": "b501ad3f94b9298b0342c0c66752fca39212e748",
+        "parents": [
+            {
+                "sha": "ebb3d7fb97b4b6653c3e6a5b8ef88bd1e8493b01",
+                "url": "https://api.github.com/repos/arelangi/maps/commits/ebb3d7fb97b4b6653c3e6a5b8ef88bd1e8493b01"
+            }
+        ],
+        "commit": {
+            "comment_count": 0,
+            "message": "closes #33.",
+            "author": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-28T00:14:55Z"
+            },
+            "url": "https://api.github.com/repos/arelangi/maps/git/commits/b501ad3f94b9298b0342c0c66752fca39212e748",
+            "committer": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-28T00:14:55Z"
+            },
+            "tree": {
+                "sha": "98239b47e6b8334046d93943d88c914832f509b0",
+                "url": "https://api.github.com/repos/arelangi/maps/git/trees/98239b47e6b8334046d93943d88c914832f509b0"
+            }
+        },
+        "comments_url": "https://api.github.com/repos/arelangi/maps/commits/b501ad3f94b9298b0342c0c66752fca39212e748/comments",
+        "author": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        },
+        "url": "https://api.github.com/repos/arelangi/maps/commits/b501ad3f94b9298b0342c0c66752fca39212e748",
+        "committer": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        }
+    },
+    {
+        "sha": "ebb3d7fb97b4b6653c3e6a5b8ef88bd1e8493b01",
+        "parents": [
+            {
+                "sha": "206090084d0543e3650eedbf7c8cd002e20be070",
+                "url": "https://api.github.com/repos/arelangi/maps/commits/206090084d0543e3650eedbf7c8cd002e20be070"
+            }
+        ],
+        "commit": {
+            "comment_count": 0,
+            "message": "closes #31. added a new class to maps.css that takes care of this issue.",
+            "author": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T22:08:28Z"
+            },
+            "url": "https://api.github.com/repos/arelangi/maps/git/commits/ebb3d7fb97b4b6653c3e6a5b8ef88bd1e8493b01",
+            "committer": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T22:08:28Z"
+            },
+            "tree": {
+                "sha": "56f2a864ed30ba1c3824a1b6f76eb19ebb8dfdf1",
+                "url": "https://api.github.com/repos/arelangi/maps/git/trees/56f2a864ed30ba1c3824a1b6f76eb19ebb8dfdf1"
+            }
+        },
+        "comments_url": "https://api.github.com/repos/arelangi/maps/commits/ebb3d7fb97b4b6653c3e6a5b8ef88bd1e8493b01/comments",
+        "author": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        },
+        "url": "https://api.github.com/repos/arelangi/maps/commits/ebb3d7fb97b4b6653c3e6a5b8ef88bd1e8493b01",
+        "committer": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        }
+    },
+    {
+        "sha": "206090084d0543e3650eedbf7c8cd002e20be070",
+        "parents": [
+            {
+                "sha": "f2cb7ff301a3e76338118dd430b3cac87ab3095d",
+                "url": "https://api.github.com/repos/arelangi/maps/commits/f2cb7ff301a3e76338118dd430b3cac87ab3095d"
+            }
+        ],
+        "commit": {
+            "comment_count": 0,
+            "message": "pushed all changes to website",
+            "author": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T21:35:31Z"
+            },
+            "url": "https://api.github.com/repos/arelangi/maps/git/commits/206090084d0543e3650eedbf7c8cd002e20be070",
+            "committer": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T21:35:31Z"
+            },
+            "tree": {
+                "sha": "b17d9c0e3c121821e59b28c96d1f2f2bcc77da58",
+                "url": "https://api.github.com/repos/arelangi/maps/git/trees/b17d9c0e3c121821e59b28c96d1f2f2bcc77da58"
+            }
+        },
+        "comments_url": "https://api.github.com/repos/arelangi/maps/commits/206090084d0543e3650eedbf7c8cd002e20be070/comments",
+        "author": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        },
+        "url": "https://api.github.com/repos/arelangi/maps/commits/206090084d0543e3650eedbf7c8cd002e20be070",
+        "committer": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        }
+    },
+    {
+        "sha": "f2cb7ff301a3e76338118dd430b3cac87ab3095d",
+        "parents": [
+            {
+                "sha": "1643fc7ffaec009bc7fb3a3f908af1d59323687b",
+                "url": "https://api.github.com/repos/arelangi/maps/commits/1643fc7ffaec009bc7fb3a3f908af1d59323687b"
+            }
+        ],
+        "commit": {
+            "comment_count": 0,
+            "message": "closes #13. Included the social buttons for sites - twitter, +1,fb, pinterest",
+            "author": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T21:29:05Z"
+            },
+            "url": "https://api.github.com/repos/arelangi/maps/git/commits/f2cb7ff301a3e76338118dd430b3cac87ab3095d",
+            "committer": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T21:29:05Z"
+            },
+            "tree": {
+                "sha": "db4eebba1c43c85c6ba20c1710af3b195cabd0e9",
+                "url": "https://api.github.com/repos/arelangi/maps/git/trees/db4eebba1c43c85c6ba20c1710af3b195cabd0e9"
+            }
+        },
+        "comments_url": "https://api.github.com/repos/arelangi/maps/commits/f2cb7ff301a3e76338118dd430b3cac87ab3095d/comments",
+        "author": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        },
+        "url": "https://api.github.com/repos/arelangi/maps/commits/f2cb7ff301a3e76338118dd430b3cac87ab3095d",
+        "committer": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        }
+    },
+    {
+        "sha": "1643fc7ffaec009bc7fb3a3f908af1d59323687b",
+        "parents": [
+            {
+                "sha": "2da7b901a04e301e4ddeb63f41098932eeeb7e7a",
+                "url": "https://api.github.com/repos/arelangi/maps/commits/2da7b901a04e301e4ddeb63f41098932eeeb7e7a"
+            }
+        ],
+        "commit": {
+            "comment_count": 0,
+            "message": "closes #29. closes #30. site description improved with twitter bootstrap popovers",
+            "author": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T18:53:03Z"
+            },
+            "url": "https://api.github.com/repos/arelangi/maps/git/commits/1643fc7ffaec009bc7fb3a3f908af1d59323687b",
+            "committer": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T18:53:03Z"
+            },
+            "tree": {
+                "sha": "8b2b9e861d5ff0974d0e1bfe29e4b6ff8c0df5f5",
+                "url": "https://api.github.com/repos/arelangi/maps/git/trees/8b2b9e861d5ff0974d0e1bfe29e4b6ff8c0df5f5"
+            }
+        },
+        "comments_url": "https://api.github.com/repos/arelangi/maps/commits/1643fc7ffaec009bc7fb3a3f908af1d59323687b/comments",
+        "author": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        },
+        "url": "https://api.github.com/repos/arelangi/maps/commits/1643fc7ffaec009bc7fb3a3f908af1d59323687b",
+        "committer": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        }
+    },
+    {
+        "sha": "2da7b901a04e301e4ddeb63f41098932eeeb7e7a",
+        "parents": [
+            {
+                "sha": "186bb9fef6f9a5542521a4c1b3f8dc2b478e4a23",
+                "url": "https://api.github.com/repos/arelangi/maps/commits/186bb9fef6f9a5542521a4c1b3f8dc2b478e4a23"
+            }
+        ],
+        "commit": {
+            "comment_count": 0,
+            "message": "closes #29. Now the zoom on city is set to 4, a little better than earlier when it was 5",
+            "author": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T17:38:04Z"
+            },
+            "url": "https://api.github.com/repos/arelangi/maps/git/commits/2da7b901a04e301e4ddeb63f41098932eeeb7e7a",
+            "committer": {
+                "email": "arelangi@gmail.com",
+                "name": "Aditya Relangi",
+                "date": "2012-11-22T17:38:04Z"
+            },
+            "tree": {
+                "sha": "cfb71c79ad131b0c346251f683663bf5d29bc6cd",
+                "url": "https://api.github.com/repos/arelangi/maps/git/trees/cfb71c79ad131b0c346251f683663bf5d29bc6cd"
+            }
+        },
+        "comments_url": "https://api.github.com/repos/arelangi/maps/commits/2da7b901a04e301e4ddeb63f41098932eeeb7e7a/comments",
+        "author": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        },
+        "url": "https://api.github.com/repos/arelangi/maps/commits/2da7b901a04e301e4ddeb63f41098932eeeb7e7a",
+        "committer": {
+            "gravatar_id": "64138341d201f35a3b95ce0f76875ca9",
+            "subscriptions_url": "https://api.github.com/users/arelangi/subscriptions",
+            "events_url": "https://api.github.com/users/arelangi/events{/privacy}",
+            "starred_url": "https://api.github.com/users/arelangi/starred{/owner}{/repo}",
+            "gists_url": "https://api.github.com/users/arelangi/gists{/gist_id}",
+            "url": "https://api.github.com/users/arelangi",
+            "repos_url": "https://api.github.com/users/arelangi/repos",
+            "login": "arelangi",
+            "organizations_url": "https://api.github.com/users/arelangi/orgs",
+            "received_events_url": "https://api.github.com/users/arelangi/received_events",
+            "followers_url": "https://api.github.com/users/arelangi/followers",
+            "avatar_url": "https://secure.gravatar.com/avatar/64138341d201f35a3b95ce0f76875ca9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 1182529,
+            "following_url": "https://api.github.com/users/arelangi/following"
+        }
+    }
+]

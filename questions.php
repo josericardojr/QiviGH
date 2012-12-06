@@ -11,7 +11,7 @@ function getQuestions(){
 									);
 		$refl = new ReflectionClass('CodeQ');
 		$questions = $refl->getConstants();
-		$out =  "<h2>Code</h2><ul>";
+		$out =  "<h4>Code</h4><ul>";
 		foreach ($questions as $key => &$value) {
 			$out =	$out.'<li><a href="#" id="'.$key.'" class="active" ondragstart="drag(event)"> '.$value.'</a></li>';
 		}
@@ -19,7 +19,7 @@ function getQuestions(){
 		 
 		 $refl = new ReflectionClass('DeveloperQ');
 		$questions = $refl->getConstants();
-		$out =$out. "<h2>Developer</h2><ul>";
+		$out =$out. "<h4>Developer</h4><ul>";
 		foreach ($questions as $key => &$value) {
 			$out =$out.'<li><a href="#" id="'.$key.'" class="active" ondragstart="drag(event)"> '.$value.'</a></li>';
 		}
@@ -28,7 +28,7 @@ function getQuestions(){
 		 
 		 $refl = new ReflectionClass('BugQ');
 		$questions = $refl->getConstants();
-		$out =$out. "<h2>Bugs</h2><ul>";
+		$out =$out. "<h4>Bugs</h4><ul>";
 		foreach ($questions as $key => &$value) {
 			$out =$out.'<li><a href="#" id="'.$key.'" class="active" ondragstart="drag(event)"> '.$value.'</a></li>';
 		}
