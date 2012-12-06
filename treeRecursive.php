@@ -2,6 +2,7 @@
 
 session_start();
 
+//theTree($_GET['repo']);
 
 function theTree($repo){
 	getUserCommits($repo);
@@ -29,7 +30,7 @@ function getTree($uri, $repo){
 	$tree_response = file_get_contents($uri.'&recursive=1');
 	$res = json_decode($tree_response,true);
 
-	$output = '{ "name":"'.$repo.'", "children":[';
+	$output = '{ "name":"'.$repo.'", "type":"dir",  "children":[';
 	$leadingComp=0;
 	for($i=0;$i< count($res['tree']);$i++){
 
@@ -37,9 +38,9 @@ function getTree($uri, $repo){
 			if($res['tree'][$i]['type'] == 'blob'){
 
 				if($i!=0)
-					$output = $output.',{"name" : "'.$res['tree'][$i]['path'].'", "size": "'.$res['tree'][$i]['size'].'"}';
+					$output = $output.',{"name" : "'.$res['tree'][$i]['path'].'","type":"blob", "size": "'.$res['tree'][$i]['size'].'"}';
 				else
-					$output = $output.'{"name" : "'.$res['tree'][$i]['path'].'", "size": "'.$res['tree'][$i]['size'].'"}';
+					$output = $output.'{"name" : "'.$res['tree'][$i]['path'].'","type":"blob", "size": "'.$res['tree'][$i]['size'].'"}';
 				$leadingComp++;
 			}else{
 				$val = subTree($res,$i,$leadingComp);
@@ -64,14 +65,19 @@ function subTree($root,$begin, $leadingComp){
 
 	if($begin!=0){
 
+		$dashPos = strrpos($root['tree'][$begin]['path'], '/');
+		if($dashPos!=false){
+			$dashPos++;
+		}
+
 		if($leadingComp > 0)
-			$store = ',{"name" : "'.substr($root['tree'][$begin]['path'],strrpos($root['tree'][$begin]['path'], '/')+1).'", "children":[';
+			$store = ',{"name" : "'.substr($root['tree'][$begin]['path'],$dashPos).'","type":"dir", "children":[';
 		else
-			$store = '{"name" : "'.substr($root['tree'][$begin]['path'],strrpos($root['tree'][$begin]['path'], '/')+1).'", "children":[';
+			$store = '{"name" : "'.substr($root['tree'][$begin]['path'],$dashPos).'", "type":"dir", "children":[';
 
 	}
 	else{	
-			$store = '{"name" : "'.substr($root['tree'][$begin]['path'],strrpos($root['tree'][$begin]['path'], '/')+1).'", "children":[';
+			$store = '{"name" : "'.substr($root['tree'][$begin]['path'],$dashPos).'","type":"dir", "children":[';
 	}
 		
 
@@ -86,10 +92,10 @@ function subTree($root,$begin, $leadingComp){
 			}else{
 
 				if(	($j != 0) ){
-					$store = $store.',{"name" : "'.substr($root['tree'][$i]['path'], strlen($root['tree'][$begin]['path'])+1).'", "size": "'.$root['tree'][$i]['size'].'"}';
+					$store = $store.',{"name" : "'.substr($root['tree'][$i]['path'], strlen($root['tree'][$begin]['path'])+1).'","type":"blob", "size": "'.$root['tree'][$i]['size'].'"}';
 				}
 				else
-					$store = $store.'{"name" : "'.substr($root['tree'][$i]['path'], strlen($root['tree'][$begin]['path'])+1).'", "size": "'.$root['tree'][$i]['size'].'"}';
+					$store = $store.'{"name" : "'.substr($root['tree'][$i]['path'], strlen($root['tree'][$begin]['path'])+1).'","type":"blob", "size": "'.$root['tree'][$i]['size'].'"}';
 
 			}
 

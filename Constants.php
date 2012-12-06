@@ -3,17 +3,12 @@
 
 class CodeQ{
 
-
-	const C1_1='By how much has changed in the project ?';
-	const C1_2='By how much has changed in the component ?';
-	const C1_3='Summary of the changes';
-	const C1_4='How much has changed in (drag me onto an element)';
+	const C1='How much has changed in';
 	const C2_1 =  'What are the changes related to a file?';
 	const C2_2 =  'What are the changes related to a developer?';
 	const C3=  'What code is related to a change?';
 	const C4=  'Which bug is related to file?';
 	const C5=  'Which bug is related to a change?';
-	const C6=  'What is the modularity of the project?';
 	const C7=  'What have people done lately?';
 	
 }
