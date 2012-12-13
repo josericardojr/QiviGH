@@ -65,7 +65,7 @@ $start = str_replace('-', '/', substr($_GET['created_at'], 0,-10));
 	</div><!-- /.navbar -->
    
 
-	<div id="container" class="container" style="width:180%; height:250%;">
+	<div id="container" class="container" style="width:180%; height:100%;">
 		<div id="leftpane">
 			<?php getQuestions(); ?>
 		</div> 	
@@ -115,8 +115,8 @@ var ajaxCounter=0;var panelContentState = new Array(); var crumbsContentState = 
 <!--The following code is for the tree-->
 <script type="text/javascript">
       var margin = {top: 20, right: 120, bottom: 20, left: 120},
-          width = 2000 - margin.right - margin.left,
-          height = 1800 - margin.top - margin.bottom,
+          width = 1500 - margin.right - margin.left,
+          height = 1200 - margin.top - margin.bottom,
           i = 0,
           duration = 500,
           root;
