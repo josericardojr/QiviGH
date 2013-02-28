@@ -118,8 +118,8 @@ var ajaxCounter=0;var panelContentState = new Array(); var crumbsContentState = 
           width = 1500 - margin.right - margin.left,
           height = 1200 - margin.top - margin.bottom,
           i = 0,
-          duration = 500,
-          root;
+          duration = 500
+          ;
 
       var tree = d3.layout.tree()
           .size([height, width]);
@@ -149,6 +149,7 @@ var ajaxCounter=0;var panelContentState = new Array(); var crumbsContentState = 
             d._children = d.children;
             d._children.forEach(collapse);
             d.children = null;
+            alert('oooo');
           }
         }
 
@@ -158,7 +159,6 @@ var ajaxCounter=0;var panelContentState = new Array(); var crumbsContentState = 
       });
 
       function update(source) {
-
         // Compute the new tree layout.
         var nodes = tree.nodes(root).reverse();
 
@@ -297,7 +297,7 @@ var ajaxCounter=0;var panelContentState = new Array(); var crumbsContentState = 
 		{
 			ev.preventDefault();
 			var data=ev.dataTransfer.getData("Text");
-			alert("source " +data+ " target "+ev.target.id);
+			alert("source " +data+ " target "+ev.target.id+" type"+ev.target.type);
 			if(ev.target.id.length!=0){
 				//We have a drop event on an element
 				reqCounter++;
@@ -394,3 +394,4 @@ var ajaxCounter=0;var panelContentState = new Array(); var crumbsContentState = 
 
                });
     </script>
+    </html>
